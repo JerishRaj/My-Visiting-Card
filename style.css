@@ -1,0 +1,224 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sans-4');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Samsung Sans', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 1.5rem;
+  background: #833AB4;
+  background: linear-gradient(90deg, 
+  rgba(131, 58, 180, 1) 0%, 
+  rgba(187, 45, 111, 1) 23%, 
+  rgba(253, 29, 29, 1) 50%, 
+  rgba(252, 116, 53, 1) 80%, 
+  rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;  
+  margin-bottom: 30px;
+}
+
+/* Card Container */
+.card_container {
+  perspective: 1000px;
+  width: 350px;
+  height: 400px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card_container:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* Both Sides */
+.frontcard, .backcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Front Design */
+.frontcard {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.front-name {
+    background: #3F5EFB;
+    background: radial-gradient(circle, 
+    rgba(63, 94, 251, 1) 0%, 
+    rgba(106, 88, 218, 1) 23%, 
+    rgba(159, 81, 178, 1) 51%, 
+    rgba(212, 75, 138, 1) 79%, 
+    rgba(252, 70, 107, 1) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.front-title, .front-location, .tagline {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 12px;
+  color: #444;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Back Design */
+.backcard {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045);
+  padding: 2px;
+  animation: flow-border 4s linear infinite;
+}
+
+.backcard-content {
+  background-color: #000;
+  color: #fff;
+  border-radius: 13px;
+  padding: 16px;
+  height: 100%;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.name {
+  font-size: 12px;
+  color: #00ffc8;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+strong {
+  color: #6effec;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0ff;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004382;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes flow-border {
+  0% { background-position: 0% 25%; }
+  50% { background-position: 50% 75%; }
+  100% { background-position: 100% 25%; }
+}
+
+.thankyou {
+  background: #833AB4;
+  background: linear-gradient(90deg, 
+  rgba(131, 58, 180, 1) 0%, 
+  rgba(187, 45, 111, 1) 23%, 
+  rgba(253, 29, 29, 1) 50%, 
+  rgba(252, 116, 53, 1) 80%, 
+  rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent; 
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.rotate-tip {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: center;
+  margin-top: 15px;
+  animation: rotate-glow 3s infinite alternate ease-in-out;
+  text-shadow: 0 0 8px #ffd700, 0 0 12px #ffa500;
+  transform: rotate(-2deg);
+}
+
+@keyframes rotate-glow {
+  0% {
+    transform: rotate(-2deg) scale(1);
+    text-shadow: 0 0 8px #ffd700;
+  }
+  50% {
+    transform: rotate(2deg) scale(1.05);
+    text-shadow: 0 0 12px #ffea00;
+  }
+  100% {
+    transform: rotate(-2deg) scale(1);
+    text-shadow: 0 0 8px #ffd700;
+  }
+}
