@@ -51,6 +51,16 @@ This card showcases:
   - 📚 Student Course Registration System (Java, MySQL, JDBC)  
 - 💪 **Strengths**: Quick Learner, Communicator, Problem Solver
 
+## 📸 Project Screenshots
+
+Here’s a sneak peek at the Digital Visiting Card in action! 🔥
+
+### 🔄 3D Rotating View (Front & Back)
+![image](https://github.com/user-attachments/assets/e1208b16-af83-47b9-8ade-08b90f14841a)
+
+![image](https://github.com/user-attachments/assets/012dd160-67ab-44ae-9bf6-476be24a4e6d)
+
+
 ## 🙏 Thank You!
 Thanks for checking out my project! If you like it, feel free to ⭐ **star** the repo and share your thoughts.
 
