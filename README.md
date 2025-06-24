@@ -36,6 +36,7 @@ Hover to flip and explore both sides.
 ├── instagram.jpg
 ├── gmail.png
 └── Resume sahana (1).pdf
+
 ## 👩‍💻 About Me
 I’m **Jerish Mary Sahana D A**, an aspiring **Java Full Stack Developer** 🌐  
 
