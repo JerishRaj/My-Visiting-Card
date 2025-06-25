@@ -19,11 +19,7 @@ This is not just a static portfolio — it’s an **animated, modern, and intera
 - CSS3 🎨
 - Google Fonts (Samsung Sans)
 - CSS Keyframes & Transitions
-
-## 📎 Live Preview
-You can preview the card and interact with it like a real business card!  
-Hover to flip and explore both sides.  
-> 💡 Perfect for showcasing in portfolios, interviews, or attaching to your email signature.
+  
 
 ## 📂 Folder Structure
 ```bash
