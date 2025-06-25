@@ -26,6 +26,7 @@ Hover to flip and explore both sides.
 > 💡 Perfect for showcasing in portfolios, interviews, or attaching to your email signature.
 
 ## 📂 Folder Structure
+```bash
 📁 project-folder/
 ├── index.html
 ├── style.css
@@ -36,6 +37,7 @@ Hover to flip and explore both sides.
 ├── instagram.jpg
 ├── gmail.png
 └── Resume sahana (1).pdf
+```
 
 ## 👩‍💻 About Me
 I’m **Jerish Mary Sahana D A**, an aspiring **Java Full Stack Developer** 🌐  
